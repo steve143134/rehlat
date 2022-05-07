@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!--meta and links-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="Sign-up.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100&family=Playfair+Display+SC&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display+SC&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+      <!--Big Picture-->
+    <div class="picture">
+    </div>
+
+      <!--Sign-up Form-->
+    <div class="form-bg">
+      <div class="form-header" id="writing">
+        <h1>Rehlat-Taj</h1>
+        <h2>Sign-up</h2>
+        <p>To recieve weekly news-letters and updates</p>
+      </div>
+      <form name="form" onsubmit="return validateForm()" method="post">
+        <div class="form-group">
+          <input type="text" placeholder="Name" pattern="[A-Za-z/ ]{1,32}" title="Please do not use Numbers or Special Characters." name="name">
+
+            <!--Name Error-->
+            <p id="Nameerror">Please Enter your name.</p>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email" name="email">
+
+            <!--Email Error-->
+            <p id="Emailerror">Please Enter your Email</p>
+        </div>
+        <div class="form-group1">
+          <button type="submit" name="button" id="button">Sign-up</button>
+        </div>
+        <div class="social">
+          <p>Sign-up using Social Media</p>
+          <a href="https://www.facebook.com/login.php" class="facebook" target="_blank"><img src="facebook.ico"></a>
+          <a href="https://accounts.google.com/Login" class="google" target="_blank"><img src="google.ico"></a>
+          <a href="https://twitter.com/login/" class="twitter" target="_blank" ><img src="twitter.ico"></a>
+        </div>
+        <div class="unsubscribe">
+          <a href="#" name="unsubscribe" id="unsubscribe">Unsubscribe-Here</a>
+        </div>
+        <div class="go-back">
+          <a href="index.html">Go Back</a>
+        </div>
+        <script type="text/javascript" src="valid.js">
+        </script>
+      </form>
+     </div>
+  </body>
+</html>

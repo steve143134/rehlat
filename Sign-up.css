@@ -1,0 +1,232 @@
+/*Affects the entire Page to fit the user screen*/
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/*Havhing the items set up in the center*/
+body{
+  display:flex;
+  width: 100%;
+  height: 100vh;
+  align-items:center;
+  background: #f7f7e8;
+}
+
+/*setting up the form background layout*/
+.form-bg{
+  margin-bottom:110px;
+  padding: 12%;
+  width: 400px;
+  position: static;
+}
+
+/*layout for the form header*/
+.form-header{
+  margin-bottom: : 0px 0px 40px;
+  text-align: center;
+}
+
+/*targetting the Rehal taj at the heading*/
+.form-bg > #writing > h1{
+  color:black;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: 'Sansita Swashed', cursive;
+  font-weight: bold;
+}
+
+/*Targetting the sign-up under the heading*/
+.form-header h2{
+  color: black;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+/*affects the sub heading under the sign-up*/
+.form-header > p{
+  color: rgba(0,0,0,1.0);
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+/*setting the form to display flex*/
+.form-group{
+  display: -webkit-box;
+  display:flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin:0px 0px 20px;
+}
+
+/*styling the name and email inputs*/
+.form-group > input{
+  outline:none;
+  display:block;
+  background: rgba(134, 171, 161, 0.43);
+  width: 100%;
+  border: 0;
+  border-radius: 25px;
+  padding: 12px 20px;
+  color: rgba(0,0,0,1.0);
+  font-weight: bolder;
+  transition: 0.3s ease;
+  font-family:'Montserrat',sans-serif;
+}
+
+/*Styling the validation for inputs*/
+#Nameerror,#Emailerror{
+  color: red;
+  width: 85%;
+  background-color: rgba(255,0,0,0.1);
+  text-align: center;
+  margin: 0 auto;
+  display: none;
+  border-radius: 0 0 20px 20px;
+  font-family: sans-serif;
+}
+
+/*Styling the go-back div*/
+.go-back{
+  padding-top:10px;
+  text-align: center;
+}
+
+/*Styling the go back link*/
+.go-back a{
+  padding: 7px 30px;
+  border-radius: 50px;
+  background-color:rgba(150, 187, 124, 0.7);
+  text-decoration: none;
+  font-family: 'Sansita Swashed',cursive;
+  font-size: 13px;
+  transition: ease-out 0.3s;
+}
+
+/*adding hover effect to the go-back link*/
+.go-back a:hover{
+  background-color:rgba(0, 145, 124, 0.7);
+}
+
+/*Layout for form-group1*/
+.form-group1{
+  text-align: center;
+  width: 100%;
+}
+
+/*Styling the sign-up button*/
+button{
+  border: 0;
+  width: 125px;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-family: 'Sansita Swashed', cursive;
+  background-color: rgba(150, 187, 124, 0.7);
+  transition: ease-out 0.3s;
+}
+
+/*Effect when button is clicked*/
+button:focus{
+  outline:none;
+  box-shadow: inset 150px 0 0 0 rgba(2, 89, 85, 0.7);
+}
+
+/*Effect when cursor is on the button*/
+button:hover{
+  background-color: rgba(0, 145, 124, 0.7);
+}
+
+/*targetting the big image to the left*/
+.picture{
+  height:100vh;
+  width:73%;
+  background:url('Italian/Drinks/wine.jpg');
+  box-shadow:  13px 10px 12px rgba(158,183,173,0.8);
+  background-size: cover;
+}
+
+/*Layout for unsubscribe div*/
+.unsubscribe{
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+/*styling the unsubscribe link*/
+.unsubscribe a{
+  font-family: sans-serif;
+  font-size: 10px;
+  opacity: 0.4;
+}
+
+/*adding a hover color to the link*/
+.unsubscribe a:hover{
+  color: red;
+}
+
+/*layout for social media icons*/
+.social{
+  text-align: center;
+}
+
+/*Space for social media icon divs*/
+.twitter,.google,.facebook{
+  padding:0px 20px 0px 20px;
+}
+
+/*Targetting the social media icons*/
+.social > a img{
+  font-size: 15px;
+  width: 10%;
+}
+
+/*targetting the line above social media icons*/
+.social p{
+  padding: 15px;
+  text-align: center;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+/*Styling for smaller screen sizes*/
+/*Styling for under 500px screens*/
+@media screen and (max-width:500px) {
+  .picture{
+    display: none;
+  }
+  .form-group{
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .form-group1{
+    padding-top: 20px;
+  }
+.form-bg{
+  padding: 10%;
+}
+}
+
+/*Styling for under 380px screens*/
+@media screen and (max-width:380px) {
+  .picture{
+    display: none;
+  }
+  .form-group{
+    width: 225px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .form-group1{
+    padding-top: 20px;
+  }
+.form-bg{
+  padding: 10%;
+}
+}

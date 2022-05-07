@@ -1,0 +1,107 @@
+/*Affects the entire Page to fit the user screen*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Havhing the bpdy to be 100% width*/
+body{
+  width: 100%;
+  background: #f7f7e8;
+}
+
+/*Adjusting title*/
+header h1{
+  padding: 20px 0;
+}
+
+/*Alyout for the privacy policly heading*/
+h1{
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Sansita Swashed',cursive;
+}
+
+/*Styling for the privacy div*/
+.privacy{
+  margin: 20px 0px;
+  border-radius: 0.5rem;
+  box-shadow:  8px 5px 15px rgba(158,183,173,0.8),
+               -8px -5px 12px rgba(158,183,173,0.8);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/*Layout for the privacy container div*/
+.privacy-container{
+  max-width: 80%;
+  margin: auto;
+  font-family: 'Montserrat',cursive;
+
+}
+
+/*Styling the content inside the container*/
+.privacy p{
+  padding: 10px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+/*Styling the list items inside the container*/
+.privacy ul li{
+  list-style-position: inside;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/*Styling the content headings*/
+h3{
+  padding: 15px 10px;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: underline;
+  line-height: 2;
+}
+
+/*Styling for smaller screen sizes*/
+/*Styling for under 1050px screens*/
+@media screen and (max-width:1050px){
+  h1{
+    font-size:25px;
+  }
+  h3{
+    font-size:15px;
+  }
+  .privacy ul li,p{
+    font-size:13px;
+  }
+}
+
+/*Styling for under 850px screens*/
+@media screen and (max-width:850px){
+  h3{
+    font-size:14px;
+    text-align:center;
+  }
+  .privacy ul li,p{
+    font-size:12px;
+  }
+  h1{
+    font-size:20px;
+  }
+}
+
+/*Styling for under 550px screens*/
+@media screen and (max-width:550px){
+  h3{
+    font-size:12px;
+    text-align:center;
+  }
+  .privacy ul li,p{
+    font-size:11px;
+  }
+  h1{
+    font-size:16px;
+  }
+}

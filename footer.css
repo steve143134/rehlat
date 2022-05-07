@@ -1,0 +1,230 @@
+/*adding padding to the footer*/
+
+footer{
+  background-color: #e7e7de;
+  padding: 1rem 0 1rem 0;
+  margin: 0;
+}
+
+/*Layout for the footer div*/
+.footer{
+  width: 100%;
+  height: 40%;
+  background-color: #e7e7de;
+  color: solid #1e212d;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*layout for the footer-heading 1 div*/
+.footer-heading{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+/*layout for the footer-heading 2 div*/
+.footer-heading-2{
+  margin-bottom: 2rem;
+}
+
+/*targetting the footer links*/
+.footer a{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #1e212d;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+/*adding a hover color to the links*/
+.footer-heading a:hover{
+  color: red;
+  transition: 0.3s ease-out;
+}
+
+/*Targets the heading for the links*/
+.footer-email h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/*targets the subscription email*/
+#footer-email{
+  width: 250px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*has the javascript code for dom object*/
+.date{
+  width: 100%;
+  text-align: center;
+  padding-top: 13px;
+}
+
+/*contains the email placeholder*/
+#footer-email::placeholder{
+  color: #b1b1b1;
+}
+
+/*targets the email button in footer*/
+#email-button{
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  color: #f9423d;
+  outline: none;
+  border: none;
+  color: #1e212d;
+  font-size: 1rem;
+}
+
+/*add hover color to the email button*/
+#email-button:hover{
+  cursor: pointer;
+  background-color: #337af1;
+  transition: 0.4s all ease-out;
+}
+
+/*targets the address in the footer*/
+.address{
+  width: 40%;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Montserrat',sans-serif;
+  text-align: center;
+}
+
+/*Layout for the email section of the footer*/
+.email{
+  padding-top: 1px;
+  margin-left: 4rem;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bold;
+}
+
+/*targets the section headings*/
+h2{
+  padding: 1.2rem 0;
+}
+
+/*Styling for smaller screen sizes*/
+/*Styling for under 1150px screens*/
+@media screen and (max-width:1150px){
+.footer{
+  height: 45vh;
+  padding-left: 2%;
+}
+address p{
+  padding-top: 4%;
+}
+}
+
+/*Styling for under 962px screens*/
+@media screen and (max-width:962px) {
+.footer{
+  font-size: 90%;
+  height: 42vh;
+}
+#email-button{
+  width:60px;
+  font-size:11px;
+  height: 30px;
+}
+#footer-email{
+  font-size:11px;
+  width:65%;
+  padding-left:5px;
+  height: 30px;
+}
+div.footer{
+  margin:0;
+}
+h2{
+  font-size: 17px;
+}
+div.footer-email{
+  text-align: center;
+  width:32%;
+}
+.footer-1,.footer-2{
+  margin-right: 2%;
+}
+address p{
+  font-size: 70%;
+}
+ .email{
+  margin-left:1rem;
+  }
+}
+
+/*Styling for under 700px screens*/
+@media screen and (max-width:700px) {
+  .footer{
+  text-align:center;
+  }
+  div.footer-email{
+    width:30%;
+    margin: 0;
+  }
+  #footer-email{
+    font-size: 11px;
+    height: 25px;
+    width: 80%;
+  }
+  #email-button{
+    width:40px;
+    font-size:11px;
+    height: 25px;
+  }
+  input#footer-email{
+    padding: 2px;
+    font-size: 9.5px;
+  }
+  .email{
+    margin-right:0;
+  }
+  h2{
+    font-size:15px;
+  }
+  .footer-heading a{
+    font-size:12px;
+  }
+}
+
+/*Styling for under 450px screens*/
+@media screen and (max-width:450px){
+  div.footer-email{
+  width:0;
+  height:0;
+}
+h2{
+  font-size:12.4px;
+}
+#footer-email,#email-button,.footer-email h2{
+  display :none;
+}
+.footer{
+  height: 50vh;
+}
+address{
+  padding-top: 20px;
+  font-size: 12px;
+}
+.footer-1,.footer-2{
+  margin-right: 1rem;
+}
+.email{
+  margin-left:0;
+}
+}

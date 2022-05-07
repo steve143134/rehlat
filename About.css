@@ -1,0 +1,397 @@
+/*Affects the entire Page to fit the user screen*/
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+/*Affects the entire code*/
+
+html{
+  background-color: #f7f7e8;
+}
+/*Headings (Features and Location)*/
+h1{
+  padding: 20px 0px;
+  font-family: 'Sansita Swashed',cursive;
+  text-align: center;
+}
+
+/*Rehal Taj Banner(Big Picture)*/
+.picture-about{
+  padding: 10px;
+  background-color: rgba(200, 198, 167, 0.8);
+  box-shadow: 1px 2px 16px rgba(200, 198, 167, 0.7),
+              -1px -2px 16px rgba(200, 198, 167, 0.7);
+}
+/*Sizing the Rehal Taj Banner(div) to fit the screen*/
+.picture{
+  width: 100%;
+  margin: auto;
+}
+
+/*Sizing the Rehal Taj Banner(Image) to fit the screen*/
+.picture img{
+  display: block;
+  width: 100%;
+}
+
+/*Styling the paragraph div below the Rehal Taj Banner*/
+.paragraph1{
+  padding: 50px;
+  font-size: 28px;
+  word-spacing: 7.5px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+/*Styling the paragraph below the Rehal Taj Banner*/
+.paragraph1 > p{
+  line-height: 2;
+}
+
+/*Styling the paragraph with an open quote*/
+.paragraph1 > p::before{
+  content: open-quote;
+}
+
+/*Styling the paragraph with a close quote*/
+.paragraph1 > p::after{
+  content: close-quote;
+}
+
+/*Styling the horizontal line adjacent to the paragraph*/
+div + hr{
+  border: dotted hsla(36, 35.4%, 19.4%, 0.74) 10px;
+  border-bottom: none;
+  width: 6%;
+  margin: 80px auto;
+}
+
+/*Styling the sub-heading after the horizontal line*/
+#Subhead{
+  padding: 20px 0px;
+  font-family: 'Montserrat',sans-serif;
+  text-align: center;
+}
+
+/*Styling the container to be center below the sub-head*/
+.container {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  height: 100%;
+  width: 100%;
+  text-align:center;
+  justify-content: center;
+  grid-gap: 20%;
+  padding: 55px;
+  background: linear-gradient(45deg, rgba(0,0,0,1) 1%, rgba(148,133,93,0.7) 30%, rgba(247, 247, 232, 0.7) 60%);
+  box-shadow: 1px 2px 12px rgba(200, 198, 167, 0.7),
+              -1px -2px 12px rgba(200, 198, 167, 0.7);
+}
+
+/*Styling the image in the container*/
+.container > figure img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0,0,0,1);
+  padding: 0;
+  margin: 0;
+}
+
+/*Styling the figcaption in the container image*/
+figcaption{
+  text-decoration: underline 3px;
+  font-size: 20px;
+  font-family: 'Sansita Swashed',cursive;
+}
+
+/*Styling the Features div below the horizontal line*/
+.features{
+  display: inline-block;
+  padding: 20px;
+  list-style-position: inside;
+  margin-left: 20%;
+}
+
+/*Styling the Features heading*/
+.features h1{
+  text-align: left;
+}
+
+/*Styling the Location heading*/
+.Location{
+  display:inline-block;
+  text-align: left;
+  float: right;
+  margin-right: 25%;
+  padding: 20px;
+}
+
+/*Styling the list-items in the Features and Location divs*/
+li{
+  font-size: 21px;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bold;
+  list-style-image:url('cutlery.png');
+  padding: 10px 0 10px 0;
+}
+
+/*Styling the table layout*/
+table{
+  width: 50%;
+  margin: 2.5rem auto 5rem auto;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bold;
+}
+
+/*Styling the table-Headings and data heading*/
+table,td,th{
+  border: 1px solid black;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+/*Styling the big caption on top of the table*/
+caption{
+  padding: 12px 0 12px 0;
+  font-size: 30px;
+  text-decoration: 3px underline;
+}
+
+/*Styling the video background*/
+section{
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  background: linear-gradient(140deg, rgba(2,0,36,1) 1%, rgba(110,95,55,1) 50%, rgba(249,248,232,1) 100%);
+  overflow: hidden;
+}
+
+/*Styling the wave div under the video*/
+section .wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url('wave.png');
+  background-size: 1000px 100px;
+}
+
+/*Styling the wave1 effect*/
+section .wave.wave1{
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+/*Styling the wave2 effect*/
+section .wave.wave2{
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+/*Styling the wave3 effect*/
+section .wave.wave3{
+  animation: animate 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15;
+}
+
+/*Styling the wave4 effect*/
+section .wave.wave4{
+  animation: animate 30s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+/*Using @keyframes to animate the waves*/
+@keyframes animate {
+  0%{
+    background-position-x:0;
+  }
+  100%{
+    background-position-x:1000px;
+  }
+}
+@keyframes animate2 {
+  0%{
+    background-position-x:0;
+  }
+  100%{
+    background-position-x:-1000px;
+  }
+}
+
+/*Styling the video, making sure to target the video by id for later javascript*/
+#video{
+  display: inline-block;
+  position: relative;
+  background: contain;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2.5rem;
+  transition: opacity 2s;
+
+}
+
+/*Styling the shadow of the vidoeo*/
+video{
+  box-shadow: 2px 2px 18px #f7f7e8 ,
+              -2px -2px 18px #f7f7e8;
+}
+
+/*Styling the button divs for fade-in / fade-out effect*/
+.button{
+  padding-top: 10px;
+  text-align: center;
+}
+
+/*Styling the buttons for fade-in / fade-out effect*/
+.button button,.button-1 button{
+  width: 100px;
+  height: 25px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 18px #f7f7e8 ,
+              -2px -2px 18px #f7f7e8;
+  font-family: 'Sansita Swashed',cursive;
+}
+
+/*On clicking the buttons no outline will be showed*/
+.button button:focus,.button-1 button:focus{
+  outline: none;
+}
+
+/*Styling for smaller screen sizes*/
+/*Styling for under 1000px screens*/
+@media screen and (max-width:1000px){
+  .paragraph1 p{
+    font-size: 20px;
+  }
+}
+
+/*Styling for under 900px screens*/
+@media screen and (max-width:900px){
+  .Location{
+    margin-right:5%;
+  }
+  .features{
+    margin-left:5%;
+  }
+  figcaption{
+    font-size: 18px;
+  }
+
+/*Adjusting the table to be convinient for smaller screens*/
+
+  table{
+    width: 60vw;
+  }
+  thead{
+    display: none;
+  }
+  th{
+    display: none;
+  }
+  .table,tbody,tr,td{
+    display: block;
+    width: 100%;
+  }
+  table tr{
+    margin-bottom:15px;
+  }
+  table td{
+    text-align: right;
+    position: relative;
+  }
+  table td::before{
+    content: attr(data-label);
+    position: absolute;
+    left:0;
+    width: 50%;
+    padding-left:15px;
+    font-size:15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+/*Styling for under 600px screens*/
+@media screen and (max-width:600px) {
+
+  video{
+    width:350px;
+  }
+    .Location,.features{
+    font-size: 13px;
+    padding: 0;
+  }
+  .Location li,.features li{
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .paragraph1 p{
+    font-size: 15px;
+  }
+  section .wave{
+    background-size: 1000px 100px;
+  }
+  table,table td::before{
+    font-size: 13px;
+  }
+  caption{
+    font-size: 20px;
+  }
+  hr{
+    margin: 40px auto;
+  }
+  .address p{
+    font-size: 12px;
+  }
+  figcaption{
+    font-size: 13px;
+  }
+}
+
+/*Styling for under 380px screens*/
+@media screen and (max-width:380px) {
+  video{
+    width:300.5px;
+  }
+
+  .paragraph1 p{
+    font-size: 10px;
+    padding: 0;
+  }
+  .First-hr{
+    margin: 10px auto;
+  }
+}
+
+/*Styling for under 300px screens*/
+@media screen and (max-width:300px){
+  video{
+    width: 275px;
+  }
+  section .wave{
+    background-size: 300px 100px;
+  }
+  .second-hr{
+    margin: 5px auto;
+  }
+
+}
